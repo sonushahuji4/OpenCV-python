@@ -22,3 +22,4 @@ img=cv2.imread('images/watch.jpg',cv2.IMREAD_GRAYSCALE)
 cv2.imshow('image',img) # To display image data, use the imshow function
 cv2.waitKey(0)  # Waits for a pressed key
 cv2.destroyAllWindows() # The function destroyAllWindows destroys all of the opened HighGUI windows
+cv2.imwrite('saveImages/watch.png',img) # Saves an image to a specified file
