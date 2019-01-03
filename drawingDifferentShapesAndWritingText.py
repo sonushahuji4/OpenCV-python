@@ -48,6 +48,8 @@ img=cv2.imread('images/watch.png',cv2.IMREAD_COLOR)
 # cv2.destroyAllWindows()
 # cv2.imwrite('output/polyshape.png',img)
 
+font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img,'Watch',(0,530),font,1,(200,25,255),5,cv2.LINE_AA)
 
 cv2.line(img,(60,10),(60,100),(255,0,0),15)
 cv2.imshow('Frame',img)
@@ -64,4 +66,4 @@ cv2.polylines(img,[pts],True,(0,0,0),3)
 cv2.imshow('Frame',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-cv2.imwrite('output/shapes.png',img)
+cv2.imwrite('output/final.png',img)
